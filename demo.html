@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Control Bar :: Test</title>
+		<meta name="theme-color" content="#00564f">		
+		<link href="https://fonts.googleapis.com/css?family=Delius|Open+Sans+Condensed:300,700" rel="stylesheet">
+        <style>
+            body, 
+            html {
+                font-family: 'Delius', sans-serif;
+                font-size: 19px;
+                color: #002b27;
+                background:#FFF;
+                padding: 0;
+                margin: 0;
+            }
+            h1,h2,h3,h4,h5,h6{
+                font-family: 'Open Sans Condensed', sans-serif;
+            }
+            h1 {
+                line-height:110%;
+            }
+            a {
+                color:#3F51B5;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            blockquote{
+                background: #3e4033 url(https://f.i.uol.com.br/fotografia/2018/01/03/15150130845a4d43dc2220d_1515013084_3x2_md.jpg) center top;
+                border-bottom: 12px dotted #FFF;
+                color: #FF0;
+                text-align: center;
+                font-weight: bold;
+                padding: 5px;
+                margin: 0;
+            }
+            body.black{
+                background:#001916;
+                color:#FFF;
+            }
+            body.black a{
+                color:#CDDC39;
+            }
+            .container {
+                margin-top: 48px;
+                padding: 1px 20px 20px 20px;
+            }
+            img {
+                width: 100%;
+            }
+            img.logo {
+                width:120px;
+                float:left;
+                margin:0 10px 0 0; 
+            }
+        </style>
+
+        <script src="navbar.min.js"></script>
+        <script>
+            window.onload = function() {
+
+                //Init (construct) the component
+                CTRLBAR = new CTRLBAR();    
+                CTRLBAR.setText('<b>Control Bar</b> Test');
+
+                //The menu icon is the theme changer
+                CTRLBAR.setAction('page','mn',function(){
+                    var b=document.body;
+                    if(b.className=='black'){
+                        b.className='';
+                        CTRLBAR.setText('<b>White</b> Theme')
+                    }
+                    else {
+                        b.className='black';
+                        CTRLBAR.setText('<b>Black</b> Theme')
+                    }
+                });
+
+                //Actions buttons bk,hm & nx
+                CTRLBAR.setAction('page','hm',function(){window.scroll(0,0)})
+                CTRLBAR.setAction('page','nx',function(){window.scroll(0,window.scrollY+100)})
+                CTRLBAR.setAction('page','bk',function(){window.scroll(0,window.scrollY-100)})
+                CTRLBAR.show();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        	<h1>Novo 'Jumanji' aposta em alusões aos anos 1980 e 1990</h1>
+            <blockquote>click on the top bar</blockquote>
+
+        	<img src="https://f.i.uol.com.br/fotografia/2018/01/03/15150130845a4d43dc2220d_1515013084_3x2_md.jpg">
+
+        	<p>Quem brinca com jogo de tabuleiro hoje em dia? Para os roteiristas de <a target="new" href="http://www1.folha.uol.com.br/ilustrada/2018/01/1947767-nick-jonas-e-engolido-por-game-e-tenta-passar-de-fase-em-novo-jumanji.shtml">"Jumanji: Bem-Vindo à Selva"</a>, ninguém. O tabuleiro que, no filme original, lançado em 1995, transportava seus jogadores a um mundo repleto de aventuras e criaturas mágicas se transformou em um clique em cartucho de videogame.</p>
+        	<p>Não se trata de um remake do primeiro longa, mas de um "reboot", uma nova versão.</p>
+        	<p>Em uma sexta, quatro adolescentes são advertidos pelo diretor da escola e mandados para a detenção para que reflitam sobre o que fizeram. Não estamos em "Clube dos Cinco", clássico dos anos 1980 de John Hughes, mas na aposta da Sony para atrair milhões de famílias mundo afora.</p>
+        	<p>Entediados, dois garotos e duas garotas descobrem o videogame e o jogo, o que os transporta para Jumanji.</p>
+        	<p>Lá eles têm de escolher seus avatares, precisam descobrir fraquezas e pontos fortes, unir os talentos, não morrer mais de três vezes e acabar o jogo, o que os levará de volta ao mundo real.</p>
+        	<p>Se no primeiro filme a estrela era o comediante Robin Williams (morto em 2014), aqui os holofotes recaem sobre Dwayne Johnson (conhecido pelo apelido "The Rock") e Jack Black, líderes do grupo que terá de superar as armadilhas virtuais para voltar para casa.</p>
+
+        	<iframe width="100%" height="315" src="https://www.youtube.com/embed/mJN6ocD6yIk" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+        	<p>O jeito brucutu de Johnson, que cogita se candidatar à presidência dos Estados Unidos, serve para piadas óbvias sobre sua canastrice, enquanto Black se multiplica em trejeitos para encarnar uma garota que, ao ingressar no mundo de Jumanji, escolheu um personagem homem. Talvez as piadas não funcionem para crianças que jogam tabuleiro.</p>
+        	<p>Os heróis estão em um videogame repleto de alusões à década de 1980 e 1990, feitas para chamar a atenção dos adultos. A principal referência cinematográfica é "Os Caçadores da Arca Perdida" (1981), que iniciou a saga do arqueólogo Indiana Jones, com boas tiradas e cenas de ação em um clima místico.</p>
+        	<p>Mas em "Jumanji" nada se cria, tudo se transforma em pastiche. A cena histórica em que um inimigo faz malabarismos com a espada até ser alvejado com um tiro de Indiana aqui tem Johnson fazendo seus inimigos voarem com socos. As cobras que aterrorizam o arqueólogo reaparecem em duas cenas – cópias ruins de um clássico.</p>
+        	<p>Não espere por reviravoltas, como cada personagem tem três vidas para terminar o jogo, não se está diante de nenhuma trama elaborada, nem de suspense.</p>
+        	<p>Como videogame, "Jumanji: Bem-Vindo à Selva" não tem nada a ver com "Zelda" ou "Final Fantasy", RPGs reflexivos e inspiradores. Funciona como aquele cartucho que não oferece dificuldade para chegar ao final, diverte um pouco. Os jogos de tabuleiro podem ajudar também na imaginação dos roteiristas.</p>
+
+        	<hr/>
+
+        	<p><a href="http://www1.folha.uol.com.br" target="new"><img class="logo" src="https://tpc.googlesyndication.com/simgad/5681562434327438816"></a> Está matéria escrita por ROBERTO ROCKMANN, foi <b>copiada</b> do site <a href="http://www1.folha.uol.com.br/ilustrada/2018/01/1947765-novo-jumanji-aposta-em-alusoes-aos-anos-1980-e-1990.shtml" target="new">Folha de São Paulo</a> - acesse o site para mais informação.</p>
+        </div>
+    </body>
+</html>
