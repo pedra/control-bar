@@ -33,7 +33,7 @@ _The problem in IE is the ```window.scrollY``` of does not exist, but the "theme
 Because the component is unique on the page, you must mount an instance by overwriting the variable itself that contains the object:
 
 ```
-CTRLBAR = new CTRLBAR([backgroud color], [text color]) 
+CTRLBAR = new CTRLBAR([text], [backgroud color], [text color]) 
 -- Or --
 CTRLBAR = new CTRLBAR 
 ```
