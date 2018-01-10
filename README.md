@@ -12,7 +12,7 @@ The **demo.html** tested in:
 * Firefox 57.0.4 - <b>Ok</b>
 * Internet Explorer 11.192.162990 - <b>Failed</b> 
         
-_The problem in IE is the ```window.scrollY``` of does not exist, but the "theme change" and "to top" buttons are **Ok**_
+_The problem in IE is the ```window.scrollY``` (**in demo_more.html, only**) of does not exist, but the "theme change" and "to top" buttons are **Ok**_
 
 ## Commands
 **setMode** change/set/create page;
