@@ -1,8 +1,6 @@
 # Control Bar
 Simple control bar (top bar) for mobile apps built under Cordova (PhoneGrap) or mobile sites. 
 
-[Pt: Simples barra de controle (barra superior) para aplicações móveis construídas sob Cordova (PhoneGrap) ou sites para mobile.]
-
 Written in pure javascript (vanilla), no need for JQuery or other Libs, this component generates a bar at the top of the page (or Cordova/PhoneGap mobile app) that can be easily manipulated in javascript.
 
 ![Screenshot](https://github.com/pedra/control-bar/blob/master/sqm.png?raw=true)
