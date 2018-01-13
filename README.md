@@ -15,25 +15,21 @@ The **demo.html** tested in:
 _The problem in IE is the ```window.scrollY``` (**in demo_more.html, only**) of does not exist, but the "theme change" and "to top" buttons are **Ok**_
 
 ## Commands
-**setMode** change/set/create page;
 
-**getMode** return actual page;
+Defines a function to execute in the onclick action of a button or link:
 
-**setAction** defines a function to execute in the onclick action of a button (or textarea [**tx**]), of a page (mode);
+    ex.: CTRLBAR.link(1,'Home', function(){...})
+         CTRLBAR.button('bmn', function(){...})
 
-    ex.: CTRLBAR.setAction('mode','mn', function(){...})
-    
-**setText** set TextArea content
+**hide** / **show** Hide or show buttons or links
 
-**hide** / **show** Hide or show buttons
+    ex.: CTRLBAR.show('nav') - to show ALL buttons.
+         CTRLBAR.show('bhm') - to show 'home' button, only. 
 
-    ex.: CTRLBAR.show() - to show ALL buttons.
-         CTRLBAR.show('hm') - to show 'home' button, only. 
-
-Because the component is unique on the page, you must mount an instance by overwriting the variable itself that contains the object:
+The component is initialized with the following options:
 
 ```
-CTRLBAR = new CTRLBAR([text], [backgroud color], [text color]) 
+CTRLBAR = new CTRLBAR([backgroud color], [text color]) 
 -- Or --
 CTRLBAR = new CTRLBAR 
 ```
