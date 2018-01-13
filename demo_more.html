@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Control Bar :: Test</title>
-		<meta name="theme-color" content="#00564f">		
+        <title>Control Bar :: Test</title>	
 		<link href="https://fonts.googleapis.com/css?family=Delius|Open+Sans+Condensed:300,700" rel="stylesheet">
         <style>
             body, 
@@ -27,7 +26,7 @@
                 text-decoration: none
             }
             blockquote{
-                background: #3e4033 url(https://f.i.uol.com.br/fotografia/2018/01/03/15150130845a4d43dc2220d_1515013084_3x2_md.jpg) center top;
+                background: #3e4033 url(http://f.i.uol.com.br/fotografia/2018/01/03/15150130845a4d43dc2220d_1515013084_3x2_md.jpg) center top;
                 border-bottom: 12px dotted #FFF;
                 color: #FF0;
                 text-align: center;
@@ -74,30 +73,26 @@
 
         <script src="ctrlbar.min.js"></script>
         <script>
-            window.onload = function() {
-
-                //Init (construct) the component
-                CTRLBAR = new CTRLBAR();    
-                CTRLBAR.setText('<b>Control Bar</b> Test');
+            window.onload = function() {                
 
                 //The menu icon is the theme changer
-                CTRLBAR.setAction('page','mn',function(){
+                CTRLBAR.button('bmn',function(){
                     var b=document.body;
                     if(b.className=='black'){
                         b.className='';
-                        CTRLBAR.setText('<b>White</b> Theme')
+                        CTRLBAR.link('txt','<b>White</b> Theme')
                     }
                     else {
                         b.className='black';
-                        CTRLBAR.setText('<b>Black</b> Theme')
+                        CTRLBAR.link('txt','<b>Black</b> Theme')
                     }
                 });
 
                 //Actions buttons bk,hm & nx
-                CTRLBAR.setAction('page','hm',function(){window.scroll(0,0)})
-                CTRLBAR.setAction('page','nx',function(){window.scroll(0,window.scrollY+100)})
-                CTRLBAR.setAction('page','bk',function(){window.scroll(0,window.scrollY-100)})
-                CTRLBAR.show();
+                CTRLBAR.link('txt','<b>Control Bar</b> Test')
+                       .button('bhm',function(){window.scroll(0,0)})
+                       .button('bnx',function(){window.scroll(0,window.scrollY+100)})
+                       .button('bbk',function(){window.scroll(0,window.scrollY-100)});
             }
         </script>
     </head>
@@ -106,7 +101,7 @@
         	<h1>Novo 'Jumanji' aposta em alusões aos anos 1980 e 1990</h1>
             <blockquote>click on the top bar</blockquote>
 
-        	<img src="https://f.i.uol.com.br/fotografia/2018/01/03/15150130845a4d43dc2220d_1515013084_3x2_md.jpg">
+        	<img id="imgx" src="http://f.i.uol.com.br/fotografia/2018/01/03/15150130845a4d43dc2220d_1515013084_3x2_md.jpg">
 
             <h2>CTRLBAR Button Actions</h2>
             <table>

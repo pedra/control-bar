@@ -5,16 +5,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Control Bar :: Test</title>
-		<meta name="theme-color" content="#00564f">
         <script src="ctrlbar.min.js"></script>
         <script>
         	window.onload = function(){
-        		CTRLBAR = new CTRLBAR("Hello World!") //constructor
-        		CTRLBAR.show() //shows the navigation buttons
+        		CTRLBAR.hide('nav').show('bmn')
+                       .link('txt','Home',function(){alert('This is already the homepage!')})
         	}
         </script>
     </head>
-    <body style="padding:48px 0 0 0">
+    <body style="padding:28px 0 0 0">
     	<h1>Hello World!</h1>
     </body>
 </html>
